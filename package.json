@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "description": "Home Control Panel",
+  "keywords": ["smart home", "smarthome", "ui"],
+  "homepage": "https://github.com/DmitryMaksakov/home-api",
+  "author": "Dmitry Maksakov <makskov0xff@gmail.com>",
+  "license": "GPL-3.0-only",
+
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=7.0.0",
+    "npm": ">=5.0.0"
+  },
+  "scripts": {
+    "build": "flow-remove-types src/ -d lib/",
+    "prepare": "npm run build",
+    "flow": "flow",
+    "start": "npm run build; node lib/server.js"
+  },
+  "devDependencies": {
+    "flow-bin": "~0.61.0",
+    "flow": "~0.2.3",
+    "flow-remove-types": "~1.2.3"
+  },
+  "dependencies": {
+    "express": "~4.16.2",
+    "express-favicon": "~2.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "express-session": "~1.0.0",
+    "helmet": "~3.9.0",
+    "compression": "~1.7.1",
+    "passport": "~0.4.0",
+    "passport-local": "~1.0.0",
+    "winston": "~2.4.0",
+    "dotenv": "~4.0.0",
+    "pg-promise": "~7.3.2",
+    "bcryptjs": "~2.4.3",
+    "cors": "~2.8.4",
+    "request": "~2.83.0",
+    "lodash": "~4.17.4",
+    "to-case": "~2.0.0",
+    "ds18b20": "~0.1.0",
+    "shelljs": "~0.7.8",
+    "connect-pg-simple": "~4.2.1",
+    "connect-flash": "~0.1.1",
+    "serialport": "~6.0.4",
+    "node-telegram-bot-api": "~0.29.0",
+    "moment": "~2.20.1",
+    "sql-escape": "~1.0.1"
+  }
+}
