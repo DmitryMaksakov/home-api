@@ -1,2 +1,2 @@
 # home-api
-Node.js app for Home Control API
+Node.js app for Home Control Panel API
